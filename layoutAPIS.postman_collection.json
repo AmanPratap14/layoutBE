@@ -1,0 +1,113 @@
+{
+	"info": {
+		"_postman_id": "8b09df62-d595-40e6-9d80-8b6f8d71210f",
+		"name": "layoutAPIS",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "20438996",
+		"_collection_link": "https://www.postman.com/dark-star-420017/workspace/api-crud/collection/20438996-8b09df62-d595-40e6-9d80-8b6f8d71210f?action=share&source=collection_link&creator=20438996"
+	},
+	"item": [
+		{
+			"name": "add Data",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"windowId\":2,\n    \"content\":\"today is a good day!!\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/api/v1/data",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"v1",
+						"data"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Count",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "127.0.0.1:3000/api/v1/count",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"v1",
+						"count"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "editData",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"content\":\"Yellow!!\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/api/v1/data/3",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"v1",
+						"data",
+						"3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getData",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/api/v1/data",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"v1",
+						"data"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
